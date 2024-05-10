@@ -52,13 +52,7 @@ body{
        border-top: none;
    }
 
-   .botao:first-child{
-       border-radius: 40px 40px 0 0;
-   }
-
-   .botoes{
-       display: block;
-   }
+   
 
    .ativo{
        background-color: var(--botao-ativo);
@@ -84,15 +78,31 @@ body{
        text-align: center;
    }
    .aba-conteudo-titulo-secundario{
-       text-align: center;
+       text-align: center; document.getElementById("dias"+i).textContent=calculaTempo(tempos[i])[0];
        color: var(--verde);
        text-transform: uppercase;
    }
 
    .contador{
-    font-size: 20px;
-    text-align: center;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
    }
+
+   .contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+ .contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+}
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+}
 
 @media screen and (min-width: 768px) {
    .botoes{
