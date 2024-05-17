@@ -52,9 +52,9 @@ body{
        border-top: none;
    }
 
-   
 
-   .ativo{
+
+   .botao.ativo{
        background-color: var(--botao-ativo);
        border-bottom: var(--verde);
    }
@@ -78,7 +78,7 @@ body{
        text-align: center;
    }
    .aba-conteudo-titulo-secundario{
-       text-align: center; document.getElementById("dias"+i).textContent=calculaTempo(tempos[i])[0];
+       text-align: center;
        color: var(--verde);
        text-transform: uppercase;
    }
